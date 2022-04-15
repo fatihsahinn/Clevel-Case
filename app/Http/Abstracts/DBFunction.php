@@ -58,7 +58,7 @@ class DBFunction extends DBAbstract{
             else
                 return response()->json(['status'=>'error','code' => '0']);
         }
-        catch(\Exception $e)
+        catch(InsertError)
         {
             return response()->json(['status'=>'error','code' => '0']);
         }
