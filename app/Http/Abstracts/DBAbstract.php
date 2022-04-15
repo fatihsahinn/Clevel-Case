@@ -2,9 +2,6 @@
 
 namespace App\Http\Abstracts;
 
-use App\Models\NoteModel;
-use Illuminate\Support\Facades\DB;
-
 abstract class DBAbstract
 {
     abstract public function selectWhere($table, $first, $operator, $second);
